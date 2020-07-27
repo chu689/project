@@ -1,0 +1,219 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1.5;
+    font-family: PingFangSC-Medium, sans-serif;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*-----------Final-----------*/
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.content, .skill, .footer {
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.profile1, .education {
+    border-top: 2px solid black;
+}
+
+.profile1, .profile2, .education {
+    font-size: 24px;
+    padding-top: 16px;
+}
+
+.content2 p, .experience1 p {
+    font-size: 20px;
+}
+
+.content2 h3, .experience1 h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.content span, .content1 span, .content2 span {
+    color: #A00404;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+/*-----------標題-----------*/
+.title {
+    font-size: 80px;
+    text-align: left;
+    padding: 20px 0px;
+}
+
+    .title h1 {
+        border-bottom: 2px solid black;
+    }
+
+    .title img {
+        padding-top: 32px;
+    }
+
+/*-----------個人資料-----------*/
+.content h2 {
+    font-size: 32px;
+    padding-bottom: 16px;
+    font-weight: bold;
+}
+
+/*-----------學歷-----------*/
+.content1 {
+    padding-bottom: 72px;
+}
+
+    .content1 h2 {
+        font-size: 32px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        font-weight: bold;
+    }
+
+/*-----------技能-----------*/
+.skill {
+    background-color: #415165;
+    color: white;
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 52px;
+}
+
+    .skill h2 {
+        margin: 0px auto;
+        width: 996px;
+        font-weight: bold;
+        font-size: 32px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid white;
+    }
+
+        .skill h2 span {
+            font-size: 24px;
+            margin-left: 16px;
+        }
+
+    .skill ul {
+        margin: 0px auto;
+        width: 250px;
+        margin-top: 24px;
+        border-left: 1px solid #96A9C4;
+        line-height: 2;
+        font-size: 24px;
+    }
+
+/*-----------工作經驗-----------*/
+.content2 {
+    padding-bottom: 76px;
+}
+
+    .content2 h2 {
+        font-size: 32px;
+        padding-top: 72px;
+        padding-bottom: 16px;
+        border-bottom: 2px solid black;
+        font-weight: bold;
+    }
+
+.experience {
+    margin: 20px 0px 40px 20px;
+    padding-left: 20px;
+    border-left: solid 2px #96A9C4;
+    padding-top: 16px;
+}
+
+    .experience img {
+        margin-top: 6px;
+    }
+
+.ex, .ex1, .ex2, .ex3 {
+    padding-top: 32px;
+}
+
+.experience1 img {
+    margin: 8px 0;
+}
+
+/*-----------聯絡方式-----------*/
+.footer {
+    background-color: #415165;
+    text-align: center;
+    color: white;
+    padding: 48px;
+    margin: 0px auto;
+}
+
+    .footer h2 {
+        margin: 0px auto;
+        font-weight: bold;
+        font-size: 32px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid white;
+        margin-bottom: 12px;
+    }
+
+        .footer h2 span {
+            font-size: 24px;
+        }
+
+    .footer ul {
+        font-size: 24px;
+        line-height: 2;
+    }
+
+.footer2 img {
+    margin: 12px;
+}

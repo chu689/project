@@ -1,0 +1,239 @@
+/*
+*  html5resetcss
+*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+
+/* ---------------------------------- */
+* {
+    font-family: 微軟正黑體;
+    color: #3F5D45;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 ;
+}
+
+.logo {
+    width: 220px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu a {
+    font-size: 16px;
+    line-height: 22px;
+    margin-left: 60px;
+    font-weight: 600;
+
+    padding-bottom: 5px;  
+    border-bottom: 2px solid transparent ;
+
+    transition: all .2s;
+}
+
+.menu a:hover {
+    color: #77b182;
+    border-bottom: 1.5px solid #77b182 ;
+}
+
+.banner {
+    margin-bottom: 60px;
+}
+
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main {
+    text-align: center;
+}
+
+.sidemenu {
+    width: 300px;
+}
+
+.sidemenu li {
+    padding: 16px 0;
+    border:  1px solid #EAF0ED;
+}
+
+.sidemenu_title{
+    background: #3F5D45;
+    padding: 16px 0;
+    color: #EAF0ED;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 600;
+}
+
+.sidemenu li a {
+    display: block;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 600;
+} 
+
+.sidemenu li {
+    transition: all .5s;
+}
+
+.sidemenu li:hover {
+    background: #EAF0ED;
+} 
+
+.product {
+    width: 620px;
+}
+
+.product .product_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product_list_item {
+    width: 300px;
+    position: relative;
+}
+
+.product .intro {
+    display: flex;
+    justify-content: center;
+}
+
+.product .intro h3 {
+    width: 150px;
+    text-align: center;
+    border: 1px solid #EAF0ED;
+    padding: 14px 0;    
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.product .intro p {
+    width: 150px;
+    text-align: center;
+    border: 1px solid #EAF0ED;
+    padding: 14px 0;    
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.product .intro .name {
+    font-weight: 300;
+}
+
+.product .intro .price {
+    font-weight: 600;
+}
+
+.product .addCart {
+    display: block;
+    padding: 16px 0;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 40px;
+    background: #EAF0ED;
+    margin-bottom: 20px;
+    transition: all .5s;
+}
+
+.product .addCart:hover {
+    color: #EAF0ED;
+    background: #3F5D45;
+}
+
+.product .fav {
+    position: absolute;
+    right: 22px;
+    top: 19px;
+}
+
+.product .star {    
+    position: absolute;
+    left: 20px;
+    top: 0px;
+    padding: 10px;
+    letter-spacing: 3px;
+
+    background: #3F5D45;
+    color: #EAF0ED;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    writing-mode:vertical-lr;
+}
+
+.pagelist {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 60px;
+}
+
+.pagelist img{
+    display: block;
+}
+
+.pagelist li{
+    width: 60px;
+}
+
+.pagelist .marks a{
+    display: block;
+    padding: 17px 18px;
+    transition: all .5s;
+    border: 1px solid transparent;
+}
+
+.pagelist .marks a:hover {
+    border: 1px solid #3F5D45;
+}
+
+
+.pagelist .number a {
+    display: block;
+    transition: all .5s;
+    padding: 16px;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 300;
+}
+
+.pagelist .number a:hover {
+    background: #3F5D45;
+    color: #EAF0ED;
+}
