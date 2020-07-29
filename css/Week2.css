@@ -313,12 +313,12 @@ form{
         justify-content: space-around;
     }
     .logo_mobile{
-        align-items: center;
         display: block;
         width:45%;
     }
     .logo_ham{
         display: block;
+        width: 115px;
     }
     .content{
         flex-direction: column;
