@@ -306,7 +306,7 @@ form{
     .logo_mobile{
         width: 30%;
     }
-    .logo_title, .menu-item{
+    .logo_title, .menu li:nth-child(-n+3){
         display: none;
     }
     .header{
