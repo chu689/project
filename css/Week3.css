@@ -52,12 +52,13 @@ body{
     font-family: 微軟正黑體;
 }
 .wrapper{
-    width:940px;
+    max-width:940px;
     margin: 0 auto;
-    margin-bottom: 60px;
 }
 img{
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 a{
     text-decoration: none;
@@ -69,8 +70,11 @@ a{
     margin-top: 40px;
     margin-bottom: 38px;
 }
-.logo{
+.logo_title{
     width: 200px;
+}
+.logo_ham,.logo_mobile{
+    display: none;
 }
 .menu{
     display: flex;
@@ -80,10 +84,11 @@ a{
 .menu li{
     text-align: center;
 }
-.menu a{
+.menu li:nth-child(-n+3){
     font-size: 16px;
-    margin-left: 60px;
+    margin-right: 60px;
     display: block;
+    padding: 5px;
 }
 .menu li a:hover{
     border-bottom: 1.5px solid #3F5D45;
@@ -96,8 +101,9 @@ a{
     justify-content: space-between;
 }
 .content-menu{
-    width: 300px;
+    width: 33%;
     font-size: 24px;
+    margin-bottom: 30px;
     font-weight: bold;
 }
 .content-menu h3{
@@ -119,19 +125,20 @@ a{
     background: #EAF0ED;
 }
 .content-product{
-    width: 620px;
+    width: 65%;
 }
-.card{
+.product-list{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
-.card li{
-    width: 300px;
+.product-list li{
+    width: 48.5%;
     position: relative;
     margin-bottom: 20px;
 }
-.card li a{
+.product-list li a{
     position: absolute;
     top: 19px;
     right: 22px;
@@ -148,29 +155,31 @@ a{
 }
 .name{
     display: flex;
+    justify-content: space-between;
 }
 .name h3{
-    width: 173px;
-    padding: 14px 33px;
+    width: 58%;
+    padding: 14px 0;
     border-left: 1px solid #EAF0ED;
     color: #3F5D45;
     text-align: center;
     font-size: 20px;
 }
 .name p{
-    width: 127px;
+    width: 42%;
+    font-weight: bold;
     text-align: center;
     color: #3F5D45;
     font-size: 20px;
     border-right: 1px solid #EAF0ED;
     border-left: 1px solid #EAF0ED;
-    padding: 14px 20px 14px 25px;    
+    padding: 14px 0;    
 }
 .content-product input{
     background:none;  
 	outline:none;  
     border:0px;
-    width: 300px;
+    width: 100%;
     height: 65px;
     background: #EAF0ED;
     color: #3F5D45;
@@ -181,7 +190,7 @@ a{
 .page{
     display: flex;
     justify-content: flex-end;
-    
+    margin-bottom: 60px;
 }
 .page li{
     width: 60px;
@@ -207,9 +216,7 @@ a{
 .subscription{
     background: #3F5D45;
 }
-.contain{
-    max-width: 940px;
-    margin: 0 auto;
+.subscription-item{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -245,21 +252,28 @@ form{
     background: #EAF0ED;
 }
 .footer-item{
+    display: flex;
+    flex-direction: column;
     padding: 30px 0;
 }
-.footer-item-top{
+.footer-top{
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
 }
-.footer-item-left li+li{
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.left li+li{
     margin-top: 10px;
 }
-.footer-item-right{
+.right{
     display: flex;
     flex-direction: row-reverse;
 }
-.footer-item-right h3{
+.right h3{
     writing-mode: vertical-rl;
     letter-spacing: 6px;
     line-height: 1.5;
@@ -267,13 +281,12 @@ form{
     font-weight: 600;
     color: #3F5D45;
 }
-.footer-item-right h3:last-child{
+.right h3:last-child{
     margin-top: 10px;
 }
-.footer-item-bottom{
+.footer-bottom{
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 .social{
     display: flex;
@@ -286,11 +299,80 @@ form{
 }
 
 /*----------------------------------*/
-/* @media (max-width: 768px) {
+@media (max-width: 992px) {
+    .logo_ham, .logo_mobile{
+        display: block;
+    }
+    .logo_mobile{
+        width: 30%;
+    }
+    .logo_title, .menu-item{
+        display: none;
+    }
+    .header{
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    .content{
+        flex-wrap: wrap;
+    }
+    .content-menu{
+        width: 100%;
+    }
+    .content-product{
+        width: 100%;
+    }
+    .product-list{
+        justify-content: space-around;
+    }
+    .product-list li{
+        width: 40%;
+    }
+    .product-list li img{
+        width: 100%;
+    }
+    .page{
+        justify-content: center;
+    }
+    .subscription-item{
+        flex-direction: column;
+    }
+    .directive{
+        margin-bottom: 33px;
+    }
+    .footer-item{
+        margin: 0 30px;
+    }
+}
+@media (max-width: 768px) {
     .wrapper{
+        max-width: 650px;
+    }
+}
+@media (max-width: 600px) {
+    .wrapper{
+        max-width: 490px;
+    }
+    .product-list li {
+        width: 85%;
+    }
+    .left img{
+        margin-bottom: 60px;
+    }
+    .right{
+        display: none;
+    }
+    .footer-bottom{
+        flex-direction: column;
+    }
+    .social{
+        margin-bottom: 30px;
+    }
+}
+    /* .wrapper{
         width: 375px;
     }
-    .t, .logo_title{
+    .menu-item, .logo_title{
         display: none;
     }
     .header{
@@ -303,6 +385,10 @@ form{
     }
     .logo_ham{
         display: block;
+    }
+    .menu a{
+        font-size: 16px;
+        padding: 5px;
     }
     .content{
         flex-direction: column;
@@ -342,5 +428,4 @@ form{
     }
     .footer-bottom{
         flex-direction: column;
-    }
-} */
+    } */
