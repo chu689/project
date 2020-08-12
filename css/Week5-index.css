@@ -108,6 +108,11 @@ a {
   margin-bottom: 38px;
 }
 
+.header button {
+  border: none;
+  background: #fff;
+}
+
 .header ul {
   display: -webkit-box;
   display: -ms-flexbox;
