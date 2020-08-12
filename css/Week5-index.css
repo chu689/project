@@ -194,6 +194,15 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .header .menu li {
+    width: 100%;
+  }
+  .header .menu li:hover {
+    background: #EAF0ED;
+  }
+  .header li:nth-child(-n+3) {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 375px) {

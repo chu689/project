@@ -84,14 +84,22 @@ a{
         }
         .menu{
             position: absolute;
-    left: 0;
-    top: 15%;
-    width: 100%;
-    transition: all 0.8s;
-    overflow: hidden;
-    background: white;
-    flex-direction: column;
-    
+            left: 0;
+            top: 15%;
+            width: 100%;
+            transition: all 0.8s;
+            overflow: hidden;
+            background: white;
+            flex-direction: column;
+            li{
+                width: 100%;
+                &:hover{
+                    background: #EAF0ED;
+                }
+            }
+        }
+        li:nth-child(-n+3){
+            margin-right: 0;
         }
     }
     @media (max-width: 375px) {
