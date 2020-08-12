@@ -111,6 +111,12 @@ a {
 .header button {
   border: none;
   background: #fff;
+  outline: none;
+  cursor: pointer;
+}
+
+.header button:hover {
+  background: #EAF0ED;
 }
 
 .header ul {
@@ -121,6 +127,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   font-size: 16px;
+  max-height: 0;
 }
 
 .header li {
@@ -130,6 +137,7 @@ a {
 .header li a {
   display: block;
   padding: 10px;
+  font-weight: bold;
 }
 
 .header li a:hover {
@@ -284,6 +292,7 @@ form .submit {
   background: #FFE180;
   padding: 20px 24px;
   border: none;
+  cursor: pointer;
 }
 
 .footer {
@@ -508,6 +517,11 @@ form .submit {
   cursor: pointer;
 }
 
+.content-product .product-list li input:hover {
+  background: #3F5D45;
+  color: #EAF0ED;
+}
+
 @media (max-width: 992px) {
   .content-product .product-list {
     -ms-flex-pack: distribute;
@@ -698,6 +712,13 @@ form .submit {
 
 .invoice-title img {
   width: 20px;
+}
+
+.invoice-title hr {
+  width: 65px;
+  background-color: #EAF0ED;
+  height: 1px;
+  border: 0;
 }
 
 .invoice form {
