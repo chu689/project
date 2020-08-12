@@ -1,0 +1,226 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.5;
+}
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+    color: #3F5D45;
+}
+.wrapper{
+    max-width:940px;
+    margin: 0 auto;
+    @media (max-width: 768px) {
+        max-width: 650px;
+    }
+    @media (max-width: 600px) {
+        max-width: 490px;
+    }
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 38px;
+    ul{
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+    }
+    li{
+        text-align: center;
+        a{
+            display: block;
+            padding: 10px;
+            &:hover{
+                background: #EAF0ED;
+            }
+        }
+    }
+    li:nth-child(-n+3){
+        font-size: 16px;
+        margin-right: 60px;
+        display: block;
+    }
+    .logo_title{
+        width: 200px;
+    }
+    .logo_ham,.logo_mobile{
+        display: none;
+    }
+    .nav{
+        display: flex;
+        align-items: center;
+    }
+    .active{
+        max-height: 200px;
+    }
+    @media (max-width: 992px) {
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        .logo_ham, .logo_mobile{
+            display: block;
+        }
+        .logo_ham{
+            padding: 10px;
+        }
+        .logo_mobile{
+            width: 30%;
+        }
+        .logo_title{
+            display: none;
+        }
+        .menu{
+            position: absolute;
+    left: 0;
+    top: 15%;
+    width: 100%;
+    transition: all 0.8s;
+    overflow: hidden;
+    background: white;
+    flex-direction: column;
+    
+        }
+    }
+    @media (max-width: 375px) {
+        .logo_mobile{
+            width: 35%;
+        }
+    }
+}
+
+.subscription{
+    background: #3F5D45;
+    &-item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 0;
+        @media (max-width: 992px) {
+            flex-direction: column;
+        }
+    }
+}
+.directive{
+    display: flex;
+    align-items: center;
+    & img{
+        width: 40px;
+        margin-right: 20px;
+    }
+    & p{
+        font-size: 24px;
+        color: #EAF0ED;
+    }
+    @media (max-width: 992px) {
+        margin-bottom: 33px;
+    }
+}
+// form{
+//     display: flex;
+//     input{
+//         background:#EAF0ED url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/mail-24px.png?raw=true) no-repeat 20px 20px;
+//     padding: 16px 20px 16px 64px;
+//     line-height: 24px;
+//     border: none;
+//     }
+//     button{
+//         background: #FFE180;
+//     padding: 20px 24px;
+//     border:none;
+//     }
+// }
+form{
+    display: flex;
+    .mail{
+        background:#EAF0ED url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/mail-24px.png?raw=true) no-repeat 20px 20px;
+        padding: 16px 20px 16px 64px;
+        line-height: 24px;
+        border: none;
+    }
+    .submit{
+        background: #FFE180;
+        padding: 20px 24px;
+        border:none;
+    }
+}
+
+.footer{
+    background: #EAF0ED;
+    &-item{
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0;
+        @media (max-width: 992px) {
+            margin: 0 30px;
+        }
+    }
+    &-top{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    & li+li{
+        margin-top: 10px;
+    }
+    @media (max-width: 600px) {
+        img{
+            margin-bottom: 60px;
+        }
+    }
+}
+.right{
+    display: flex;
+    flex-direction: row-reverse;
+    & h3{
+        writing-mode: vertical-rl;
+        letter-spacing: 6px;
+        line-height: 1.5;
+        font-size: 22px;
+        font-weight: 600;
+        color: #3F5D45;
+    }
+    & h3:last-child{
+        margin-top: 10px;
+    }
+    @media (max-width: 600px) {
+        display: none;
+    }
+}
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 600px) {
+        flex-direction: column;
+    }
+}
+.social{
+    display: flex;
+    & img{
+        width: 32px;
+    }
+    & a+a{
+        margin-left: 8px;
+    }
+    @media (max-width: 600px) {
+        margin-bottom: 30px;
+    }
+}
+

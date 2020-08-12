@@ -1,0 +1,134 @@
+.checkout{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 800px;
+}
+.invoice{
+    width: 60%;
+    color: #EAF0ED;
+    font-weight: bold;
+    font-size: 20px;
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+    &-item{
+        background: #3F5D45;
+        padding: 30px 40px;
+        label{
+            margin-bottom: 8px;
+        }
+    }
+    &-choice{
+        display: flex;
+        margin-bottom: 30px;  
+        li{
+            width: 100%;
+            border: 1px solid #EAF0ED;
+        }
+        a{
+            display: block;
+            color: #EAF0ED;
+            padding: 14px 0;
+            text-align: center;
+            &:hover{
+                background: #EAF0ED;
+                color: #3F5D45;
+            }
+        }
+    }
+    &-title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        h2{
+            font-size: 36px;
+        }
+        ul{
+            display: flex;
+        }
+        li+li{
+            margin-left: 65px;
+        }
+        img{
+            width: 20px;
+        }
+    }
+    form{
+        flex-direction: column;
+        input{
+            border: none;
+            background: #EAF0ED;
+            padding: 17px 20px;
+            margin-bottom: 16px;
+        }
+    }
+    button{
+        width: 100%;
+        background: #FFE180;
+        color: #3F5D45;
+        border: none;
+        font-size: 24px;
+        padding: 19px 0;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
+.order{
+    width: 38%;
+    color: #8DA291;
+    margin-bottom: 60px;
+    @media (max-width: 768px) {
+        display: none;
+    }
+    h3{
+        padding: 16px 0;
+        background: #EAF0ED;
+        font-weight: bold;
+        text-align: center;
+        font-size: 24px;
+    }
+    ul{
+        border: 1px solid #EAF0ED;
+        padding: 16px 20px;
+    }
+    &-summery{
+        margin-bottom: 20px;
+        li{
+            display: flex;
+            justify-content: space-between;
+            &:first-child{
+                margin-bottom: 8px;
+            }
+            &:nth-child(2){
+                margin-bottom: 16px;
+            }
+            &:nth-child(3){
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+    &-list{
+        img{
+            width: 120px;
+            height: 80px;
+            object-fit: cover;
+        }
+        li{
+            display: flex;
+            justify-content: space-between;
+        }
+        li+li{
+            margin-top: 16px;
+        }
+    }
+    &-product{
+        margin: auto 0;
+        p:last-child{
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+}
