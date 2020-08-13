@@ -68,6 +68,9 @@
             background: #EAF0ED;
             padding: 17px 20px;
             margin-bottom: 16px;
+            &::placeholder{
+                color: #8DA291;
+            }
         }
     }
     button{
@@ -75,10 +78,14 @@
         background: #FFE180;
         color: #3F5D45;
         border: none;
+        outline: none;
         font-size: 24px;
         padding: 19px 0;
         font-weight: bold;
         cursor: pointer;
+        &:hover{
+            background: #EAF0ED;
+        }
     }
 }
 .order{

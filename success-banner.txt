@@ -1,0 +1,41 @@
+.success-banner{
+    background-image: url(https://bit.ly/2P7GhNd);
+    background-repeat: no-repeat;
+    height: 460px;
+    background-size: cover;
+    background-position:center;
+    margin-bottom: 60px;
+    position:relative;
+    .success{
+        display: flex;
+        width: 20%;
+        position: absolute;
+        top:28%; 
+        left:40%;
+        img{
+            color: #3F5D45;
+        }
+        hr{
+            width: 65px;
+            background-color: #EAF0ED;
+            height: 1px;
+            border: 0;
+        }
+    }
+    .successful{
+        width: 189px;
+        position: absolute;
+        top:40%; 
+        left:40%;
+    }
+    a{
+        padding: 17px 102px;
+        font-size: 20px;
+        background: #FFE180;
+        color: #3F5D45;
+        font-weight: bold;
+        position: absolute;
+        top:60%; 
+        left:35%;
+    }
+}

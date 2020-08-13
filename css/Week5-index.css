@@ -206,6 +206,7 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    z-index: 1;
   }
   .header .menu li {
     width: 100%;
@@ -215,6 +216,9 @@ a {
   }
   .header li:nth-child(-n+3) {
     margin-right: 0;
+  }
+  .header .active {
+    max-height: 200px;
   }
 }
 
@@ -735,15 +739,36 @@ form .submit {
   margin-bottom: 16px;
 }
 
+.invoice form input::-webkit-input-placeholder {
+  color: #8DA291;
+}
+
+.invoice form input:-ms-input-placeholder {
+  color: #8DA291;
+}
+
+.invoice form input::-ms-input-placeholder {
+  color: #8DA291;
+}
+
+.invoice form input::placeholder {
+  color: #8DA291;
+}
+
 .invoice button {
   width: 100%;
   background: #FFE180;
   color: #3F5D45;
   border: none;
+  outline: none;
   font-size: 24px;
   padding: 19px 0;
   font-weight: bold;
   cursor: pointer;
+}
+
+.invoice button:hover {
+  background: #EAF0ED;
 }
 
 .order {
@@ -824,5 +849,93 @@ form .submit {
 .order-product p:last-child {
   font-size: 20px;
   font-weight: bold;
+}
+
+.success {
+  background-image: url(https://bit.ly/2P7GhNd);
+  background-repeat: no-repeat;
+  height: 460px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.success-banner {
+  width: 30%;
+  position: absolute;
+  top: 30%;
+  left: 35%;
+}
+
+.success-banner img {
+  width: 190px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 600px) {
+  .success-banner img {
+    margin-bottom: 240px;
+  }
+}
+
+@media (max-width: 600px) {
+  .success-banner {
+    width: 40%;
+    position: absolute;
+    top: 35%;
+    left: 32%;
+  }
+}
+
+.success-item {
+  max-width: 190px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #3F5D45;
+  margin: 0 auto 30px;
+}
+
+.success-item hr {
+  width: 65px;
+  background-color: #3F5D45;
+  height: 1px;
+  border: 0;
+}
+
+.success-link {
+  width: 300px;
+  background: #FFE180;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 100px;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .success-link {
+    width: 100%;
+    bottom: -60px;
+  }
+}
+
+.success a {
+  display: block;
+  padding: 17px;
+  font-size: 24px;
+  background: #FFE180;
+  color: #3F5D45;
+  font-weight: bold;
+  text-align: center;
+}
+
+.success a:hover {
+  border: 2px solid #3F5D45;
 }
 /*# sourceMappingURL=Week5-index.css.map */

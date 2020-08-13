@@ -102,6 +102,7 @@ a{
             overflow: hidden;
             background: white;
             flex-direction: column;
+            z-index: 1;
             li{
                 width: 100%;
                 &:hover{
@@ -111,6 +112,9 @@ a{
         }
         li:nth-child(-n+3){
             margin-right: 0;
+        }
+        .active{
+            max-height: 200px;
         }
     }
     @media (max-width: 375px) {
@@ -147,20 +151,6 @@ a{
         margin-bottom: 33px;
     }
 }
-// form{
-//     display: flex;
-//     input{
-//         background:#EAF0ED url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/mail-24px.png?raw=true) no-repeat 20px 20px;
-//     padding: 16px 20px 16px 64px;
-//     line-height: 24px;
-//     border: none;
-//     }
-//     button{
-//         background: #FFE180;
-//     padding: 20px 24px;
-//     border:none;
-//     }
-// }
 form{
     display: flex;
     .mail{
