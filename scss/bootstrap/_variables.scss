@@ -72,6 +72,8 @@ $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-800 !default;
+//add new
+$bright:          #916000 !default;
 
 $theme-colors: () !default;
 $theme-colors: map-merge(
@@ -86,7 +88,7 @@ $theme-colors: map-merge(
     "dark":       $dark,
     //new add
     "test":     cornflowerblue,
-    "bright":   #916000    
+    "bright":   $bright    
   ),
   $theme-colors
 );
