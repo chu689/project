@@ -1,0 +1,16 @@
+.product-list{
+    @media (max-width:991px){
+        h4{
+            font-size: 20px;
+        }
+    }
+}
+.page-link{
+    color:$secondary;
+    font-size: $h5-font-size;
+    &:hover{
+        color: $primary;
+        text-decoration: underline;
+        font-size: $h5-font-size;
+    }
+}
