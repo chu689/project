@@ -20,7 +20,7 @@
 
 <body>
     <!-- nav -->
-    <div class="container">
+    <div class="container" data-aos="zoom-in">
         <nav class="navbar navbar-expand-md navbar-light px-0">
             <h1 class="logo mb-0">
                 <a class="navbar-brand" href="Index.html">d’Perfume</a>
@@ -55,7 +55,7 @@
         </nav>
     </div>
     <!-- mobile -->
-    <div class="container-fluid">
+    <div class="container-fluid" data-aos="zoom-in">
         <div class="collapse navbar-collapse" id="navbarSupportedContent2">
             <ul class="navbar-nav text-center">
                 <li class="nav-item py-2 bg-list border-bottom border-white">
@@ -104,7 +104,7 @@
     <!-- 客製化--個人資訊 -->
     <div class="login container mt-8">
         <div class="row mb-11">
-            <div class="col-12 col-md-12 col-lg-2 order-1">
+            <div class="col-12 col-md-12 col-lg-2 order-1" data-aos="fade-right">
                 <h2 class="mb-15 d-none d-lg-flex h5 font-weight-bold text-grayDark">會員中心</h5>
                     <ul class="d-flex justify-content-between d-lg-block list-unstyled font-weight-bold">
                         <li class="mb-6"><a href="#" class="py-2 text-grayDark text-decoration-none">會員資料修改</li></a>
@@ -112,7 +112,7 @@
                         <li><a href="#" class="py-2 text-grayDark text-decoration-none">退／換貨申請</li></a>
                     </ul>
             </div>
-            <div class="col-12 col-md-7 order-3 order-md-1">
+            <div class="col-12 col-md-7 order-3 order-md-1" data-aos="zoom-in">
                 <h3 class="pb-2 h6 font-weight-bold border-bottom border-gray">個人資料修改</h3>
                 <form class=" text-gray mb-9">
                     <div class="form-group row">
@@ -226,7 +226,7 @@
                     </div>
                 </form>
             </div>
-            <div class="col-12 col-md-5 col-lg-3 order-2 order-md-2 mb-8">
+            <div class="col-12 col-md-5 col-lg-3 order-2 order-md-2 mb-8" data-aos="zoom-in">
                 <table class="table table-borderless table-sm text-gray">
                     <thead>
                         <tr>
@@ -282,6 +282,33 @@
             </div>
         </div>
     </div>
+    <!-- CSS 動畫 -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 400, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: true, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+    </script>
 </body>
 
 </html>
