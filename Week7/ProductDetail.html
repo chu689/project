@@ -20,7 +20,7 @@
 
 <body>
     <!-- nav -->
-    <div class="container">
+    <div class="container" data-aos="zoom-in">
         <nav class="navbar navbar-expand-md navbar-light px-0">
             <h1 class="logo mb-0">
                 <a class="navbar-brand" href="Index.html">d’Perfume</a>
@@ -55,7 +55,7 @@
         </nav>
     </div>
     <!-- mobile -->
-    <div class="container-fluid">
+    <div class="container-fluid" data-aos="zoom-in">
         <div class="collapse navbar-collapse" id="navbarSupportedContent2">
             <ul class="navbar-nav text-center">
                 <li class="nav-item py-2 bg-list border-bottom border-white">
@@ -104,7 +104,7 @@
     <!-- 客製化--產品詳細資訊 -->
     <div class="product-detail container mt-8">
         <div class="row flex-md-row-reverse mb-11">
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4" data-aos="fade-left">
                 <img src="images/product-list/photo-1594913785201-eb82e5c0bce4.png"
                     class="d-md-none img-fluid mb-7" alt="">
                 <h2 class="font-weight-bold">CHANEL N°5</h2>
@@ -135,12 +135,12 @@
                 </div>
             </div>
             <div class="product-img col-12 col-md-8">
-                <img src="images/product-list/photo-1594913785201-eb82e5c0bce4.png" class="d-none d-md-flex" alt="">
-                <div class="product-half d-flex justify-content-md-between d-flex-column flex-wrap">
+                <img src="images/product-list/photo-1594913785201-eb82e5c0bce4.png" class="d-none d-md-flex" data-aos="fade-right" alt="">
+                <div class="product-half d-flex justify-content-md-between d-flex-column flex-wrap" data-aos="fade-right">
                     <img src="images/product-list/photo-1594913785162-e678a0c23ee9.png" alt="">
                     <img src="images/product-list/photo-1594913365927-d35af29a0684.png" alt="">
                 </div>
-                <img src="images/product-list/photo-1594913785201-eb82e5c0bce4.png" alt="">
+                <img src="images/product-list/photo-1594913785201-eb82e5c0bce4.png" data-aos="fade-right" alt="">
             </div>
         </div>
     </div>
@@ -174,6 +174,33 @@
             </div>
         </div>
     </div>
+    <!-- CSS 動畫 -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 400, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: true, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+    </script>
 </body>
 
 </html>
