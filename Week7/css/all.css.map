@@ -92,10 +92,10 @@
         "../scss/bootstrap/utilities/_visibility.scss",
         "../scss/bootstrap/_print.scss",
         "../scss/_layout.scss",
-        "../scss/_index.scss",
-        "../scss/_product.scss",
-        "../scss/_productDetail.scss",
-        "../scss/_myPage.scss"
+        "../scss/page/_index.scss",
+        "../scss/page/_product.scss",
+        "../scss/page/_productDetail.scss",
+        "../scss/page/_myPage.scss"
     ],
     "names": [],
     "file": "all.css"
