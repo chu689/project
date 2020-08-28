@@ -1,0 +1,12 @@
+.banner{
+    background:center url("../images/photo-1588159343745-445ae0b16383.png");
+    height: 870px;
+    background-size: cover;
+    button{
+        font-size: 28px;
+        border-radius: 30px;
+        color:$white;
+        // border-color: $white;
+        border: 2px solid $white;
+    }
+}

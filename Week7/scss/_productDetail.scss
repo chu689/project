@@ -1,0 +1,33 @@
+.product-img{
+    img{
+        margin-bottom: 30px;
+        @media (max-width:1200px){
+            width: 100%;
+        }
+    }
+    .product-half{
+        img{
+            width: 48%;
+            @media (max-width: 767px){
+                width: 100%;
+                margin-bottom: 16px;
+            }
+        }
+    }
+}
+.product-detail{
+    button{
+        @media (min-width:992px){
+            padding: 12px 48px;
+        }
+    }
+    p{
+        margin-bottom: 12px;
+    }
+    img{
+        // margin-bottom: 30px;
+        @media (max-width:1200px){
+            width: 100%;
+        }
+    }
+}
