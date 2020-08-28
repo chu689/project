@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/all.css">
+    <script src="https://kit.fontawesome.com/2af4a2a56c.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- nav -->
+    <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light px-0">
+            <h1 class="logo mb-0">
+                <a class="navbar-brand" href="Index.html">d’Perfume</a>
+            </h1>
+            <div class="mobile d-flex">
+                <div class="mobile-cart d-md-none d-flex align-items-center mr-5">
+                    <a href="#"><i class="fas fa-shopping-cart text-dark"></i></a>
+                    <p class="text-center bg-primaryDark text-white">3</p>
+                </div>
+                <button class="navbar-toggler border-0 btn" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item mr-6">
+                        <a class="nav-link" href="Product.html"><i class="fas fa-tshirt mr-2"></i>Product</a>
+                    </li>
+                    <li class="nav-item mr-6">
+                        <a class="nav-link" href="Login.html"><i class="fas fa-user mr-2"></i>log in</a>
+                    </li>
+                    <li class="nav-item mr-6">
+                        <a class="nav-link" href="#"><i class="fas fa-heart mr-2"></i>Wishlist</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-shopping-cart mr-2"></i>Cart(3)</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- mobile -->
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+            <ul class="navbar-nav text-center">
+                <li class="nav-item py-2 bg-list border-bottom border-white">
+                    <a class="nav-link text-white" href="Product.html">Product</a>
+                </li>
+                <li class="nav-item py-2 bg-list border-bottom border-white">
+                    <a class="nav-link text-white" href="#">Wishlist</a>
+                </li>
+                <li class="nav-item py-2 bg-list border-bottom border-white">
+                    <a class="nav-link text-white" href="#">Blog</a>
+                </li>
+                <li class="nav-item py-2 bg-list border-bottom border-white">
+                    <a class="nav-link text-white" href="#">Contact</a>
+                </li>
+                <li class="nav-item py-2 bg-list">
+                    <a class="nav-link text-white" href="Login.html">log in</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 品牌列表 -->
+    <div class="container-fluid d-none d-md-flex mb-12 bg-primaryDark">
+        <div class="container">
+            <ul class="nav row ">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">CHANEL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Jo Malone</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Curology</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Dior</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Chloe</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">ZARA</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 客製化--登入頁面 -->
+    <div class="login container mt-8">
+        <div class="row align-items-center mb-12">
+            <div class="col-12 col-md-8 mb-15">
+                <img src="images/photo-1515377905703-c4788e51af15.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-12 col-md-4">
+                <h2 class="mb-3 font-weight-bold">Log in</h2>
+                <form>
+                    <div class="form-group mb-5">
+                        <label for="exampleInputEmail1">帳號</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="email@example.com">
+                    </div>
+                    <div class="form-group mb-8">
+                        <label for="exampleInputPassword1">密碼</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="#">忘記密碼</a>
+                        <div>
+                            <button type="button" class="btn btn-outline-primaryDark mr-2">註冊</button>
+                            <button type="button" class="btn btn-primaryDark" onclick="location.href='MyPage.html'">登入</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- 頁尾 -->
+    <div class="footer container-fluid bg-primaryDark">
+        <div class="container">
+            <div class="py-5 d-flex justify-content-between">
+                <div class="copyright d-flex align-items-center">
+                    <a href="Index.html" class="d-block">
+                        <img src="https://github.com/chu689/project/blob/master/Week7/images/d%E2%80%99Perfumew.png?raw=true"
+                            class="img-fluid mr-5" alt="">
+                    </a>
+                    <small class="d-block text-white">© 2020. All Rights Reserved.</small>
+                </div>
+                <ul class="d-none d-md-flex align-items-center justify-content-end mb-0 list-unstyled">
+                    <li class="mr-8"><a href="Product.html" class="text-white">Product</a></li>
+                    <li class="mr-8"><a href="#" class="text-white">Blog</a></li>
+                    <li><a href="#" class="text-white">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
